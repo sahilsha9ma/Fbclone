@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+}
+
+.header_left img{
+    height: 50px;
+    width: 80px;
+}
+
+.user_profile{
+    border-radius: 50%;
+    width: 50px;
+}
+
+.header{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0 5px 8px -9px rgba(0, 0, 0, 0.75);
+    margin-left: -5px;
+}
+
+.header_left{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header_input{
+    display: flex;
+    align-items: center;
+    background-color: #eff2f5;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 999px;
+    width: 250px;
+}
+
+.header_input input{
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
+}
+
+.header_middle{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+    
+
+.header_option .material-icons{
+    font-size: xx-large;
+    color: gray;
+}
+
+.header_option:hover .material-icons{
+    color: #2e81f4;
+}
+
+.header_option{
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+.header_option.active .material-icons{
+    color: #2e81f4;
+}
+
+.header_option.active{
+    border-bottom: 4px solid #2e81f4;
+}
+
+.header_option:hover{
+    background-color: #eff2f5;
+    border-radius: 10px;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: none;
+}
+
+.header_right{
+    display: flex;
+    align-items: center;
+}
+
+.header_right .material-icons{
+    margin: 0 10px;
+    font-size: xx-large;
+    color: black;
+}
+
+.header_info:hover .material-icons{
+    color: #2e81f4;
+}
+
+.header_info{
+    align-items: center;
+    display: flex;
+    padding: 0 2px;
+    cursor: pointer;
+}
+
+.header_right .header_info img{
+    height: 40px;
+    width: 40px;
+}
+
+.sidebarRow{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.sidebarRow:hover{
+    background-color: rgb(246, 235, 235);
+    border-radius: 10px;
+}
+
+.sidebarRow h4{
+    font-size: 15px;
+    margin-left: 20px;
+    font-weight: 600;
+    font-family: Helvetica;
+}
+
+.sidebarRow .material-icons{
+    font-size: xx-large;
+    color: #2e81f4;
+}
+
+.sidebarRow.color .material-icons{
+    color: orange;
+    font-size: xx-large;
+}
+
+.sidebarRow.color1 .material-icons{
+    color: yellow;
+    font-size: xx-large;
+}
+
+.sidebarRow.color2 .material-icons{
+    color: black;
+    font-size: xx-large;
+}
+
+.story{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 120px;
+    height: 200px;
+    box-shadow: 0px 5px 17px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 100ms ease-in;
+}
+
+.story:hover{
+    transform: scale(1.07);
+}
+
+.story_profile{
+    margin: 10px;
+}
+
+.story h4{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+.storyReel{
+    margin-top: -20px;
+    padding: 10px 0;
+    display: flex;
+    margin-left: 120px;
+}
+
+.main_body{
+    display: flex;
+}
+
+body{
+    background-color: #f1f2f5;
+}
+
+.feed{
+    flex: 1;
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar{
+    padding: 25px 10px;
+    flex: 0.33;
+}
+
+.messageSender{
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+    width: 650px;
+}
+
+.messageSender_top{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eff2f5;
+    padding: 15px;
+}
+
+.messageSender_top from{
+    flex: 1;
+    display: flex;
+}
+
+.messageSender_top form input{
+    flex: 1;
+    outline-width: 0;
+    border: none;
+    padding: 15px;
+    margin: 0 10px;
+    border-radius: 999px;
+    background-color: #eff2f5;
+    width: 500px;
+}
+
+.messageSender_bottom{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.messageSender_option{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    margin: 5px;
+}
+
+.messageSender_option h4{
+    font-size: medium;
+    margin-left: 10px;
+}
+
+.messageSender_option:hover{
+    cursor: pointer;
+    background-color: #eff2f5;
+    border-radius: 5px;
+}
+
+.post{
+    width: 650px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 5px 7px -7px rgba(0, 0, 0, 0.75);
+    
+}
+
+.post_image img{
+    width: 100%;
+}
+
+.post_top{
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 15px;
+}
+
+.post_profile{
+    margin-right: 10px;
+}
+
+.post_topinfo h3{
+    font-size: medium;
+}
+
+.post_topinfo p{
+    font-size: small;
+    color: gray;
+}
+
+.post_bottom{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px 25px;
+}
+
+.post_options{
+    padding-top: 10px;
+    border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: medium;
+    color: gray;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.post_option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    flex: 1;
+}
+
+.post_option p{
+    margin-left: 10px;
+}
+
+.post_option:hover{
+    background-color: #eff2f5;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px){
+    .sidebar{
+        display: none;
+    }
+
+    .header_input input{
+        display: none;
+    }
+
+    .header_middle{
+        display: none;
+    }
+
+    .header_info_img{
+        display: none;
+    }
+
+    .widgets{
+        display: none;
+    }
+
+    .feed{
+        margin-top: 20px;
+        width: 100%;
+        padding: 0;
+    }  
+
+}
+
+.story h4{
+    font-size: 10px;
+}
+
+.story img{
+    width: 40px;
+}
+
+@media (min-width: 320px){
+    .storyReel{
+        width: 100%;
+        overflow-x: scroll;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1440px){
+    .feed{
+        width: 50%;
+        padding: 10px 50px;
+    }
+    
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+}
